@@ -2,11 +2,12 @@
 	import SouceCode from '../components/sourcecode.svelte';
 	import NavBar from '../components/navbar.svelte';
 	import Console from '../components/console.svelte';
+	import Expain from '../components/explain.svelte';
 	import Variables from '../components/variables.svelte';
 	import HttpFlow from '../components/http.svelte';
 	import { get } from 'svelte/store';
 	import { addLog, clearLogs } from '../stores/logs';
-	import { serVars, cliVars} from '../stores/variables';
+	import { serVars, cliVars } from '../stores/variables';
 </script>
 
 <h1 class="text-center p-4 sm:text-2xl sm:p-4 font-bold" style="color: #18181b">
@@ -19,14 +20,13 @@
 		<SouceCode title="Server Site Code:" />
 	</div>
 </div>
-<div class="flex justify-between w-full mt-4" id="consoles container">
-	<Console side="client" />
-	<Console side="server" />
+<div class= "border border-solid m-3">
+	<Expain />
 </div>
 <p class="mx-4 mt-2 font-bold text-darkgreen">variables and data in local storage</p>
 <div class="flex justify-between">
-	<Variables title="client side:" data={get(cliVars)}/>
-	<Variables title="server side:" data={get(serVars)}/>
+	<Variables title="client side:" data={get(cliVars)} />
+	<Variables title="server side:" data={get(serVars)} />
 </div>
 <p class="mx-4 mt-2 font-bold text-darkgreen">Http request and response</p>
 <HttpFlow />
