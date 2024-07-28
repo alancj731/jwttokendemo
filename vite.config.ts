@@ -5,7 +5,7 @@ export default defineConfig({
 	server: {
 		fs: {
 			// Allow serving files from outside the project root (optional)
-			allow: ['./public']
+			allow: ['static']
 		  },
 	},
 	plugins: [sveltekit()],
