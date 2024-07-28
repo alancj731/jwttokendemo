@@ -14,6 +14,7 @@ export default {
 				varcontent: '#F4EEE0',
 				statustitle: '#3DC2EC',
 				nexttitle: '#EB3678',
+				pinkred: '#F15A59'
 			}
 		}
 	},
