@@ -4,17 +4,17 @@
 	import Explain from '../components/explain.svelte';
 	import Variables from '../components/variables.svelte';
 	import HttpFlow from '../components/http.svelte';
-	import { doc } from "../stores/document";
+	import { doc } from '../stores/document';
 	import { onMount } from 'svelte';
 	onMount(() => {
-		if (document){
+		if (document) {
 			doc.set(document);
-		} 
-	})
+		}
+	});
 </script>
 
 <div class="flex w-full justify-center p-4 sm:text-xl sm:p-4 font-bold" style="color: #18181b">
-	How does &nbsp <img src="../../static/jwt.svg" alt="JWT logo" /> &nbsp token work &nbsp
+	How does &nbsp <img src="/jwt.svg" alt="JWT logo" /> &nbsp token work &nbsp
 	<i class="fa fa-circle-question mt-[5px]"></i>
 </div>
 <div class="flex flex-col sm:flex-row sm:justify-between">
