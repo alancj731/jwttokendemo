@@ -92,19 +92,21 @@
 				<form on:submit={inputUserNameAndPassWord} class="flex flex-col text-darkgreen">
 					<label class="mt-4" for="username">Username</label>
 					<input
-						class="mt-[4px] p-[8px] rounded-sm border-[1px] border-gray-300"
+						class="text-darkgray mt-[4px] p-[8px] rounded-sm border-[1px] border-gray-300"
 						type="text"
 						id="username"
 						bind:value={username}
+						placeholder="ironman"
 						required
 					/>
 
 					<label class="mt-4" for="password">Password</label>
 					<input
-						class="mt-[4px] p-[8px] rounded-sm border-[1px] border-gray-500"
+						class="text-darkgray mt-[4px] p-[8px] rounded-sm border-[1px] border-gray-500"
 						type="password"
 						id="password"
 						bind:value={password}
+						placeholder="fingercrossed"
 						required
 					/>
 

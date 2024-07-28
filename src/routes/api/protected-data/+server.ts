@@ -17,8 +17,6 @@ export const GET: RequestHandler = async ({ request }) => {
 
     const accessToken = authHeader.split(' ')[1]
 
-    console.log('accessToken:', accessToken)
-
     if (!accessToken) return new Response(JSON.stringify({ error: 'Token missing' }), { status: 401 });
 
     try{

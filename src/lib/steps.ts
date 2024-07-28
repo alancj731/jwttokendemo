@@ -56,7 +56,7 @@ export async function refreshToken() {
 			if (document) {
 				const cookies = cookie.parse(document.cookie);
 				const accessToken = cookies.access_token || '';
-				console.log('access token:', accessToken);
+				console.log('Received new access token:', accessToken);
 				// update tokens in variables
 				updateVariable({ name: 'access_token', value: accessToken }, false);
 				Steps.set(2);

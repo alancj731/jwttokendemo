@@ -7,7 +7,7 @@ export type Variable = {
 
 const initSerVars: Variable[] = [
 	{ name: 'username', value: 'ironman' },
-	{ name: 'password', value: 'fingercross' },
+	{ name: 'password', value: 'fingercrossed' },
 	{ name: 'access_secret', value: 'jarvis' },
 	{ name: 'refresh_secret', value: 'pepper' },
 	{ name: 'access_token_max_age', value: 5 }, // in seconds

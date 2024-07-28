@@ -8,7 +8,7 @@
 	$: serData = $serVars;
 </script>
 
-<div class="flex flex-col p-2 items-start bg-darkgray w-1/2 mx-3 my-2 h-36 overflow-scroll">
+<div class="flex flex-col p-2 items-start bg-darkgray w-1/2 mx-3 my-2 h-44 overflow-scroll">
 	<div>
 		<p class=" text-lightgreen">{title}</p>
 	</div>
