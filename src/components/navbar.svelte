@@ -3,9 +3,11 @@
 	import { get } from 'svelte/store';
 	import { cliVars, getValueFromName, updateVariable } from '../stores/variables';
 	import type { Variable } from '../stores/variables';
-	import { login } from '$lib/steps';
+	import { login, accessData, refreshToken } from '$lib/steps';
+	
 	let currentStep: number;
 	$: currentStep = $Steps;
+	
 	let currentVars = <Variable[]>[];
 	$: currentVars = $cliVars;
 
@@ -14,7 +16,7 @@
 		console.log('Log from nextStep:', get(Steps));
 	};
 
-	const funcOfSteps = [openLogin, login, nextStep, nextStep, nextStep, nextStep];
+	const funcOfSteps = [openLogin, login, accessData, refreshToken, accessData];
 	// used to bind with dialog input, client: false server: true
 	let username: string;
 	let password: string;
@@ -24,8 +26,8 @@
 			case 0:
 				return 'start';
 			// 5 is the last step of this demo
-			case 5:
-				return 'reset';
+			case 4:
+				return 'this is the last step';
 			default:
 				return 'continue';
 		}

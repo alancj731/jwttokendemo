@@ -4,9 +4,9 @@ import jwt from 'jsonwebtoken';
 import { serialize } from 'cookie';
 
 import { get } from 'svelte/store';
-import { serVars, updateVariable, getValueFromName } from '../../../stores/variables';
+import { serVars, getValueFromName } from '../../../stores/variables';
 
-const { sign, verify, decode } = jwt;
+const { sign} = jwt;
 
 const refreshSecret = getValueFromName('refresh_secret', true);
 const accessSecret = getValueFromName('access_secret', true);
@@ -40,12 +40,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		if (!checkSecret(refreshSecret, accessSecret)){
 			return json({ message: 'Server error', error: 'Refresh or access secret is not valid' }, { status: 500 });
 		}
-		const rephreshToken = sign({ username }, refreshSecret as string);
+		const refreshToken = sign({ username }, refreshSecret as string);
 		const accessToken = sign({ username }, accessSecret as string);
-
-
-		// update rephreshToken
-		updateVariable({ name: 'refresh_token', value: rephreshToken }, true);
 
 		// prepare cookies
 		const accessExpires = new Date(Date.now() + accessMaxAge * 1000);

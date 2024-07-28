@@ -10,9 +10,8 @@ const initSerVars: Variable[] = [
 	{ name: 'password', value: 'fingercross' },
 	{ name: 'access_secret', value: 'jarvis' },
 	{ name: 'refresh_secret', value: 'pepper' },
-	{ name: 'access_token_max_age', value: 10 }, // in seconds
-	{ name: 'refresh_token_max_age', value: 5 }, // in days
-	{ name: 'rephress_token', value: null },
+	{ name: 'access_token_max_age', value: 5 }, // in seconds
+	{ name: 'refresh_token_max_age', value: 10 }, // in days
 	{ name: 'secret_data', value: 'Infinity Gauntlet' }
 ];
 
