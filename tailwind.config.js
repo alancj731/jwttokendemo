@@ -11,7 +11,10 @@ export default {
 				logscontent: '#1B262C',
 				logstitle: '#FF4301',
 				vartitle: '#F2F7A1',
-				varcontent: '#F4EEE0'
+				varcontent: '#F4EEE0',
+				statustitle: '#3DC2EC',
+				nexttitle: '#EB3678',
+				pinkred: '#F15A59'
 			}
 		}
 	},
