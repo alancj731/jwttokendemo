@@ -64,7 +64,7 @@
 	>
 		<i class="fas fa-bars">Try</i>
 
-		<nav class="ml-2 mt-2 text-xs">
+		<nav class="ml-2 mt-2 text-sm">
 			<ul class="flex flex-col space-y-2 font-normal text-[14px]">
 				<li>
 					<button
