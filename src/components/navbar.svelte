@@ -62,24 +62,24 @@
 	<div
 		class="w-full h-[100px] px-4 py-3 m-1 rounded-sm border border-[#e4e4e7] border-1[px] bg-darkgray text-lightgreen font-bold sm:min-h-[330px] mt-3 ml-3 sm:w-[250px]"
 	>
-		<i class="fas fa-bars">Try</i>
+		<i class="fa fa-bars"></i>
 
-		<nav class="ml-2 mt-2 text-sm">
-			<ul class="flex flex-col space-y-2 font-normal text-[14px]">
+		<nav class="ml-2 mt-2">
+			<ul class="flex flex-col space-y-2 font-normal">
 				<li>
 					<button
 						on:click={() => {
 							funcOfSteps[currentStep]();
 						}}
 					>
-						<i class="fas fa-play p-1 hover:bg-hoverbtnbg cursor-pointer">
+						<i class="fa fa-play p-1 hover:bg-hoverbtnbg cursor-pointer">
 							&nbsp {getStatusPrompt(currentStep)}
 						</i>
 					</button>
 				</li>
 				<li>
 					<button on:click={() => resetSteps()}>
-						<i class="fas fa-redo p-1 hover:bg-hoverbtnbg cursor-pointer"> &nbsp reset </i>
+						<i class="fa fa-redo p-1 hover:bg-hoverbtnbg cursor-pointer"> &nbsp reset </i>
 					</button>
 				</li>
 			</ul>
