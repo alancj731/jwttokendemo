@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store';
+import { writable, get } from 'svelte/store';
 
 export type Variable = {
 	name: string;
@@ -26,6 +26,15 @@ const initCliVars: Variable[] = [
 
 export const serVars = writable<Variable[]>(initSerVars);
 export const cliVars = writable<Variable[]>(initCliVars);
+
+export const getValueFromName = (name: string, server: boolean) => {
+	let currentVars = server ? get(serVars) : get(cliVars);
+	
+	const found = currentVars.filter(element => {
+		element.name === name;
+	});
+	return found.length > 0 ? found[0].value : null;
+}
 
 export const updateVariable = (variable: Variable, server: boolean) => {
 	let currentVars = server ? serVars : cliVars;
