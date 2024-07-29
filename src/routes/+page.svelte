@@ -15,7 +15,7 @@
 
 <div class="flex w-full justify-center p-4 sm:text-xl sm:p-4 font-bold" style="color: #18181b">
 	How does &nbsp <img src="/jwt.svg" alt="JWT logo" /> &nbsp token work &nbsp
-	<i class="fa fa-circle-question mt-[5px]"></i>
+	<i class="fa fa-question-circle mt-[5px]"></i>
 </div>
 <div class="flex flex-col sm:flex-row sm:justify-between">
 	<NavBar />
