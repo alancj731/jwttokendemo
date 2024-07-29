@@ -20,6 +20,7 @@ export async function login() {
 			const document = get(doc);
 			// get cookies from local storage
 			if (document) {
+				// get cookies from local storage
 				const cookies = cookie.parse(document.cookie);
 				const accessToken = cookies.access_token || '';
 				const refresh_token = cookies.rephreshToken || "can't access from JavaScript";

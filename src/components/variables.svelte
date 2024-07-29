@@ -17,7 +17,7 @@
 			{#each cliData as { name, value }}
 				<div class="flex flex-1">
 					<p class="text-varcontent">{name}:&nbsp&nbsp</p>
-					<p class="text-pinkred">{value}</p>
+					<p class="text-lightpink">{value}</p>
 				</div>
 			{/each}
 		{:else}

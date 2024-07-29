@@ -26,7 +26,7 @@
 		<div class="text-darkgray h-10 w-full">
 			{nowList[step]}
 		</div>
-		<p class="text-nexttitle">Next Step--></p>
+		<p class="text-lightpink">Next Step--></p>
 		<div class="text-darkgray h-10 w-full">
 			{nextList[step]}
 		</div>
