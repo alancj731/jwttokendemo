@@ -4,8 +4,8 @@
 	const nowList = [
 		'No username or password entered yet (or after entering a wrong username/password).',
 		'Username and password are entered.',
-		`Successfully logged in or get new access token by refresh token. Access token expires in 5 seconds, refresh token expires in 10 days.`,
-		'Access token is expired, use refresh token to get new access token',
+		`Successfully logged in or get a new access token using refresh token. Access token expires in 5 seconds, refresh token expires in 10 days.`,
+		'Access token is expired, use refresh token to get a new access token',
 		'Access token is valid, protected data has been received'
 	];
 	const nextList = [
